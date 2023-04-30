@@ -13,6 +13,22 @@ https://dl-cdn.alpinelinux.org/alpine/v3.17/releases/x86_64/alpine-standard-3.17
 
 Create linux VM in virtual box and install alphine linux using the ISO image
 
+![Create VM](/images/install/linux-vm-0.jpg)
+
+![Create VM](/images/install/linux-vm.jpg)
+
+![Create VM](/images/install/linux-vm-1.jpg)
+
+![Create VM](/images/install/linux-vm-2.jpg)
+
+![Create VM](/images/install/linux-vm-3.jpg)
+
+![Create VM](/images/install/linux-vm-4.jpg)
+![Create VM](/images/install/linux-vm-5.jpg)
+![Create VM](/images/install/linux-vm-6.jpg)
+![Create VM](/images/install/linux-vm-7.jpg)
+![Create VM](/images/install/linux-vm-8.jpg)
+
 ## Install docker
 Once the linux installation is completed, install docker software using the following commands
 
