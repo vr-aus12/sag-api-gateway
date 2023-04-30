@@ -54,14 +54,14 @@ sysctl -w vm.max_map_count=262144
 
 Once the docker is installed, run the following docker commands to install the API portal and API Gateway
 ```
-docker network create devportal-network
+docker network create sag-webmethods-api-network
 ```
 ```
-docker run -d -e "discovery.type=single-node" -e "xpack.security.enabled=false" -u elasticsearch --net devportal-network --hostname devportal-elastic --net-alias devportal-elastic docker.elastic.co/elasticsearch/elasticsearch:8.2.3
+docker run -d -e "discovery.type=single-node" -e "xpack.security.enabled=false" -u elasticsearch --net sag-webmethods-api-network --hostname devportal-elastic --net-alias devportal-elastic docker.elastic.co/elasticsearch/elasticsearch:8.2.3
 ```
 ```
-docker run -d -e SPRING_ELASTICSEARCH_REST_URIS="http://devportal-elastic:9200" --net devportal-network --hostname devportal-server -p 80:8083 softwareag/devportal:10.15.0.5
+docker run -d -e SPRING_ELASTICSEARCH_REST_URIS="http://devportal-elastic:9200" --net sag-webmethods-api-network --hostname devportal-server -p 80:8083 softwareag/devportal:10.15.0.5
 ```
 ```
-docker run -d -p 5555:5555 -p 9072:9072  --net devportal-network --hostname apigw-host --name apigw softwareag/apigateway-trial:10.15
+docker run -d -p 5555:5555 -p 9072:9072  --net sag-webmethods-api-network --hostname apigw-host --name apigw softwareag/apigateway-trial:10.15
 ```
