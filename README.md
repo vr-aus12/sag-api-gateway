@@ -1,10 +1,11 @@
-# Installing webMethods API Gateway using docker
+# Installing webMethods API Gateway using Docker
 
 ## Install Oracle Virtural Box Software
 https://www.virtualbox.org/wiki/Downloads
 `
-## Download the alpine linux software
+## Install the alpine linux virtual machine using virtual box
 
+Download the alpine linux software
 https://www.alpinelinux.org/downloads/
 
 https://dl-cdn.alpinelinux.org/alpine/v3.17/releases/x86_64/alpine-standard-3.17.3-x86_64.iso
