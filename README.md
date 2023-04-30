@@ -16,15 +16,17 @@ Create linux VM in virtual box and install alphine linux using the ISO image
 ## Install docker
 Once the linux installation is completed, install docker software using the following commands
 
-``
+```
 apk update
-``
-``
+```
+
+```
 apk add docker docker-compose
-``
-``
+```
+
+```
 rc-update add docker boot
-``
+```
 ``
 service docker start
 ``
