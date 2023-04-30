@@ -65,3 +65,8 @@ docker run -d -e SPRING_ELASTICSEARCH_REST_URIS="http://devportal-elastic:9200" 
 ```
 docker run -d -p 5555:5555 -p 9072:9072  --net sag-webmethods-api-network --hostname apigw-host --name apigw softwareag/apigateway-trial:10.15
 ```
+
+'''
+docker logs apigw --follow
+'''
+
