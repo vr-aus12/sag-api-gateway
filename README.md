@@ -1,9 +1,9 @@
-Installing webMethods API Gateway using docker
+# Installing webMethods API Gateway using docker
 
-Install Oracle Virtural Box Software
+## Install Oracle Virtural Box Software
 https://www.virtualbox.org/wiki/Downloads
 `
-Download the alpine linux software
+## Download the alpine linux software
 
 https://www.alpinelinux.org/downloads/
 
@@ -11,6 +11,7 @@ https://dl-cdn.alpinelinux.org/alpine/v3.17/releases/x86_64/alpine-standard-3.17
 
 Create linux VM in virtual box and install alphine linux using the ISO image
 
+## Install docker
 Once the linux installation is completed, install docker software using the following commands
 
 apk update
@@ -18,6 +19,7 @@ apk add docker docker-compose
 rc-update add docker boot
 service docker start
 
+## Install SAG API Gateway
 Now install SoftwareAG API Gateway and API Portal using the following commands.
 
 Docker images are in the following links
