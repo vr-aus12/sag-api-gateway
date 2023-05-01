@@ -32,6 +32,21 @@ Create linux VM in virtual box and install alphine linux using the ISO image
 ## Install docker
 Once the linux installation is completed, install docker software using the following commands
 
+
+![Create VM](/images/install/docker-2.jpg)
+
+![Create VM](/images/install/docker-3.jpg)
+
+![Create VM](/images/install/docker-4.jpg)
+![Create VM](/images/install/docker-5.jpg)
+![Create VM](/images/install/docker-6.jpg)
+![Create VM](/images/install/docker-7.jpg)
+![Create VM](/images/install/docker-8.jpg)
+![Create VM](/images/install/docker-9.jpg)
+![Create VM](/images/install/docker-10.jpg)
+![Create VM](/images/install/docker-11.jpg)
+
+
 ```vi /etc/apk/repositories```
 
 Uncomment all repositories by removing # in front
@@ -63,6 +78,16 @@ https://hub.docker.com/r/softwareag/devportal
 https://hub.docker.com/r/softwareag/apigateway-trial
 
 Run the below command to increase the kernel setting in linux host.
+![Create VM](/images/install/api-1.jpg)
+
+![Create VM](/images/install/api-2.jpg)
+![Create VM](/images/install/api-3.jpg)
+![Create VM](/images/install/api-4.jpg)
+![Create VM](/images/install/api-5.jpg)
+![Create VM](/images/install/api-6.jpg)
+![Create VM](/images/install/api-7.jpg)
+![Create VM](/images/install/api-8.jpg)
+
 
 ```
 sysctl -w vm.max_map_count=262144
