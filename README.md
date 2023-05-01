@@ -121,13 +121,13 @@ docker logs apigw --follow
 ![Create VM](/images/install/docker-10.jpg)
 ![Create VM](/images/install/docker-11.jpg)
 
-
-
-# Create the first API and test it
-
 ![Create VM](/images/install/api-1.jpg)
 
 ![Create VM](/images/install/api-2.jpg)
+
+# Create the first API and test it
+
+
 ![Create VM](/images/install/api-3.jpg)
 ![Create VM](/images/install/api-4.jpg)
 ![Create VM](/images/install/api-5.jpg)
