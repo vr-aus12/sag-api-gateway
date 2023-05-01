@@ -117,39 +117,72 @@ docker container ls
 
 ![Create VM](/images/install/docker-7.jpg)
 
-Wait for few minutes for servers to startup
-
-When you access the below URL for dev portal, check IP on your host
-
-```
-http://192.168.20.35/portal
-```
-
-![Create VM](/images/install/docker-8.jpg)
+Wait for few minutes for servers to startup. Check the below command for log status
 
 
 ```
 docker logs apigw --follow
 ```
 
-![Create VM](/images/install/docker-9.jpg)
+When you access the below URL for dev portal, check IP on your host
+
+```
+http://192.168.20.39/portal
+```
+
+![Create VM](/images/install/docker-8.jpg)
+
+Use Administrator/manage username and password to log into the API portal
+
 ![Create VM](/images/install/docker-10.jpg)
+
+When you access the below URL for Integration Server, check IP on your host
+
+```
+http://192.168.20.39:5555
+```
+
+![Create VM](/images/install/docker-9.jpg)
+
+Use Administrator/manage username and password to log into the IS
+
 ![Create VM](/images/install/docker-11.jpg)
 
+Under solutions -> click API Gateway, API gateway URL will open
+
 ![Create VM](/images/install/api-1.jpg)
+
+Configure API portal details in API Gateway as below and test it.
 
 ![Create VM](/images/install/api-2.jpg)
 
 # Create the first API and test it
 
-
+Create API in the API gateway as below, import openssl file downloaded from swaggerhu Simple API template.
 ![Create VM](/images/install/api-3.jpg)
+
+Activate the API, publish to API portal, enable tracing as below
 ![Create VM](/images/install/api-4.jpg)
+
+
 ![Create VM](/images/install/api-5.jpg)
+In API portal, you can see the published API
 ![Create VM](/images/install/api-6.jpg)
+
+Try the API from API portal, by calling get method
 ![Create VM](/images/install/api-7.jpg)
+
+Now you can see the trace logs in API gateway as below
 ![Create VM](/images/install/api-8.jpg)
 
+## Conclusion
+
+We successfully installed below
+Installed Oracle virtual box.
+Created a Alphine linux VM
+Installed docker software in the VM
+Installed API gateway and portal docker containers
+Created and tested first API
 
 
 
