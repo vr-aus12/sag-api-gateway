@@ -49,6 +49,8 @@ apk add docker docker-compose
 ```
 ![Create VM](/images/install/docker-2.jpg)
 
+
+Run the below commands to start docker daemon
 ```
 rc-update add docker boot
 ```
@@ -56,9 +58,19 @@ rc-update add docker boot
 service docker start
 ```
 
+Now the docker is installed
 
+## Install SAG API Gateway
+Now install SoftwareAG API Gateway and API Portal using the following commands.
 
-Once the docker is installed, run the following docker commands to install the API portal and API Gateway
+Docker images are in the following links
+
+https://hub.docker.com/u/softwareag
+
+https://hub.docker.com/r/softwareag/devportal
+
+https://hub.docker.com/r/softwareag/apigateway-trial
+
 
 Run the below command to increase the kernel setting in linux host.
 ```
@@ -111,18 +123,7 @@ docker logs apigw --follow
 
 
 
-
-## Install SAG API Gateway
-Now install SoftwareAG API Gateway and API Portal using the following commands.
-
-Docker images are in the following links
-
-https://hub.docker.com/u/softwareag
-
-https://hub.docker.com/r/softwareag/devportal
-
-https://hub.docker.com/r/softwareag/apigateway-trial
-
+# Create the first API and test it
 
 ![Create VM](/images/install/api-1.jpg)
 
