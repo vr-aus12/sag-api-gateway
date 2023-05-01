@@ -57,23 +57,27 @@ service docker start
 ```
 
 
-![Create VM](/images/install/docker-3.jpg)
 
-
-
+Once the docker is installed, run the following docker commands to install the API portal and API Gateway
 
 Run the below command to increase the kernel setting in linux host.
 ```
 sysctl -w vm.max_map_count=262144
 ```
+![Create VM](/images/install/docker-3-map-setting.jpg)
 
-![Create VM](/images/install/docker-4.jpg)
 
-Once the docker is installed, run the following docker commands to install the API portal and API Gateway
+Run the below command to install seperate network in docker
 
 ```
 docker network create sag-webmethods-api-network
 ```
+![Create VM](/images/install/docker-3-create-network.jpg)
+
+![Create VM](/images/install/docker-4.jpg)
+
+
+
 ![Create VM](/images/install/docker-5.jpg)
 
 
