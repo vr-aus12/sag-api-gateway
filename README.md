@@ -86,28 +86,43 @@ docker network create sag-webmethods-api-network
 ```
 ![Create VM](/images/install/docker-3-create-network.jpg)
 
-![Create VM](/images/install/docker-4.jpg)
-
-
-
-![Create VM](/images/install/docker-5.jpg)
-
 
 ```
 docker run -d -e "discovery.type=single-node" -e "xpack.security.enabled=false" -u elasticsearch --net sag-webmethods-api-network --hostname devportal-elastic --net-alias devportal-elastic docker.elastic.co/elasticsearch/elasticsearch:8.2.3
 ```
 
-![Create VM](/images/install/docker-6.jpg)
+![Create VM](/images/install/docker-5-elastic-docker.jpg)
+
 
 
 ```
 docker run -d -e SPRING_ELASTICSEARCH_REST_URIS="http://devportal-elastic:9200" --net sag-webmethods-api-network --hostname devportal-server -p 80:8083 softwareag/devportal:10.15.0.5
 ```
-![Create VM](/images/install/docker-7.jpg)
+
+![Create VM](/images/install/docker-4-dev-portal-docker.jpg)
+
 
 
 ```
 docker run -d -p 5555:5555 -p 9072:9072  --net sag-webmethods-api-network --hostname apigw-host --name apigw softwareag/apigateway-trial:10.15
+```
+
+
+![Create VM](/images/install/docker-6.jpg)
+
+
+```
+docker container ls
+```
+
+![Create VM](/images/install/docker-7.jpg)
+
+Wait for few minutes for servers to startup
+
+When you access the below URL for dev portal, check IP on your host
+
+```
+http://192.168.20.35/portal
 ```
 
 ![Create VM](/images/install/docker-8.jpg)
